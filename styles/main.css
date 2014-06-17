@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -57px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.outwrap {
+	width: 100%;
+}
+
+/* TITLEBAR/NAVBAR ITEMS*/
+
+
+
+/* FOOTER ITEMS */
+#footer, .push {
+	height: 57px; /* .push must be the same height as #footer */
+	line-height: 57px;
+}
+
+#footer-container {
+	background-color: #edeff0;
+}
+
+#footer {
+	width: 1024px;
+	margin: auto;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	padding: 0px;
+}
+
+.left {
+	
+	position: relative;
+	float: left;
+}
+
+.right {
+	
+	position: relative;
+	float: right;
+}
