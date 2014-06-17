@@ -30,8 +30,38 @@ html, body {
 	line-height: 57px;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-weight: 300;
-	font-size: 1.4em;
 	color: white;
+}
+
+#title {
+	font-size: 1.5em;
+}
+
+.menu-item {
+	width: 114px;
+	color: white;
+}
+
+.centered {
+	width: 114px;
+	text-align:center;
+	font-size: 1em;
+}
+
+#menu-more {
+	background-color: #363d44;
+
+}
+
+#menu-share {
+	background-color: #3f474f;
+
+}
+
+#menu-donate {
+	background-color: #fca30a;
+	color: black;
+
 }
 
 
