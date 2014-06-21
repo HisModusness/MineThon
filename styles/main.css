@@ -12,6 +12,7 @@ html, body {
 }
 
 .outwrap {
+	min-width: 640px !important;
 	width: 100%;
 }
 
