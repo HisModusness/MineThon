@@ -16,7 +16,8 @@ html, body {
 }
 
 .content {
-	width: 1024px;
+	max-width: 1024px;
+	min-width: 640px;
 	margin: auto;
 }
 
@@ -78,7 +79,8 @@ html, body {
 
 .header h1 {
 	text-align: center;
-	width: 1024px;
+	max-width: 1024px;
+	min-width: 640px;
 	margin-left: auto;
 	margin-right: auto;
 	
@@ -91,13 +93,23 @@ html, body {
 
 .header h2 {
 	text-align: center;
-	width: 1024px;
+	max-width: 1024px;
+	min-width: 640px;
 	margin-left: auto;
 	margin-right: auto;
 
 	margin-top: 28px;
 	font-size: 1.2em;
 	font-weight: 300;
+	
+}
+
+/* STREAM ITEMS */
+#stream-container {
+	background-color: white;
+}
+
+#stream {
 	
 }
 
