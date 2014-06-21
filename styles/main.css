@@ -21,6 +21,20 @@ html, body {
 	margin: auto;
 }
 
+/* GENERAL USE */
+
+.left {
+	
+	position: relative;
+	float: left;
+}
+
+.right {
+	
+	position: relative;
+	float: right;
+}
+
 /* TITLEBAR/NAVBAR ITEMS*/
 #navbar-container {
 	background-color: #2d3339;
@@ -36,6 +50,7 @@ html, body {
 
 #title {
 	font-size: 1.5em;
+	margin-left: 15px;
 }
 
 .menu-item {
@@ -130,14 +145,12 @@ html, body {
 	font-size: 1em;
 }
 
-.left {
-	
-	position: relative;
-	float: left;
+#footer .left {
+	margin-left: 15px;
 }
 
-.right {
-	
-	position: relative;
-	float: right;
+#footer .right {
+	margin-right: 15px;
 }
+
+
