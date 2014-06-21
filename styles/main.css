@@ -125,33 +125,57 @@ html, body {
 	background-color: white;
 }
 
-#stream {
-	height: 352px;
-	padding-top: 57px;
-	padding-bottom: 57px;
-	max-width: 1024px;
-	min-width: 640px;
-	margin-left: auto;
-	margin-right: auto;
-	display: table;
+@media screen and (min-width: 960px) {
+	#stream {
+		height: 352px;
+		padding-top: 57px;
+		padding-bottom: 57px;
+		max-width: 1024px;
+		min-width: 640px;
+		display: table;
+		margin: 0 auto;
+	}
+
+	#stream-video {
+		background-color: #363d44;
+		width: 470px;
+		height: 352px;
+		position: relative;
+		float: left;
+	}
+	
+	#stream-chat {
+		background-color: #edeff0;
+		width: 470px;
+		height: 352px;
+		position: relative;
+		float: left;
+	}
 }
 
-#stream-video {
-	background-color: #363d44;
-	width: 470px;
-	height: 352px;
-	margin-left: auto;
-	margin-right: auto;
-}
+@media screen and (max-width: 959px) {
+	#stream {
+		height: 352px;
+		padding-top: 57px;
+		padding-bottom: 57px;
+		max-width: 1024px;
+		display: table;
+		margin: 0 auto;
+	}
+	
+	#stream-video {
+		background-color: #363d44;
+		width: 470px;
+		height: 352px;
+	}
+	
+	#stream-chat {
+		background-color: #edeff0;
+		width: 470px;
+		height: 352px;
+	}
 
-#stream-chat {
-	background-color: #edeff0;
-	width: 470px;
-	height: 352px;
-	margin-left: auto;
-	margin-right: auto;
 }
-
 
 /* FOOTER ITEMS */
 #footer, .push {
