@@ -126,7 +126,27 @@ html, body {
 }
 
 #stream {
-	
+	height: 466px;
+}
+
+#stream-video {
+	background-color: #363d44;
+	width: 470px;
+	height: 352px;
+	margin-left: 28px;
+	margin-right: auto;
+	margin-top: 57px;
+	margin-bottom: 57px;
+}
+
+#stream-chat {
+	background-color: #edeff0;
+	width: 470px;
+	height: 352px;
+	margin-left: auto;
+	margin-right: 28px;
+	margin-top: 57px;
+	margin-bottom: 57px;
 }
 
 
