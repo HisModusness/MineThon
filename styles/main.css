@@ -135,7 +135,7 @@ a {
 }
 
 #stream {
-	height: 352px;
+	height: 378px;
 	padding-top: 57px;
 	padding-bottom: 57px;
 	max-width: 1024px;
@@ -146,14 +146,14 @@ a {
 #stream-video {
 	background-color: #363d44;
 	width: 620px;
-	height: 352px;
+	height: 378px;
 	margin-bottom: 28px;
 }
 
 #stream-chat {
 	background-color: #edeff0;
 	width: 350px;
-	height: 352px;
+	height: 378px;
 	margin: 0 auto;
 }
 
