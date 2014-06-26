@@ -145,19 +145,20 @@ a {
 
 #stream-video {
 	background-color: #363d44;
-	width: 470px;
+	width: 620px;
 	height: 352px;
 	margin-bottom: 28px;
 }
 
 #stream-chat {
 	background-color: #edeff0;
-	width: 470px;
+	width: 350px;
 	height: 352px;
+	margin: 0 auto;
 }
 
 /* So it expands on larger screens/modern browsers */
-@media screen and (min-width: 988px) {
+@media screen and (min-width: 1054px) {
 	#stream {
 		min-width: 640px;
 	}
