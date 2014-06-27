@@ -44,6 +44,8 @@ a {
 /* TITLEBAR/NAVBAR ITEMS*/
 #navbar-container {
 	background-color: #2d3339;
+	position: fixed;
+	z-index: 10 !important;
 }
 
 #navbar {
@@ -56,7 +58,7 @@ a {
 
 #title {
 	font-size: 1.5em;
-	margin-left: 15px;
+	margin-left: 0px;
 }
 
 .menu-item {
@@ -139,8 +141,8 @@ a {
 	padding-top: 57px;
 	padding-bottom: 57px;
 	max-width: 1024px;
-	display: table;
 	margin: 0 auto;
+	display: table;
 }
 
 #stream-video {
@@ -148,17 +150,23 @@ a {
 	width: 620px;
 	height: 378px;
 	margin-bottom: 28px;
+	display: table;
 }
 
 #stream-chat {
 	background-color: #edeff0;
-	width: 350px;
+	width: 376px;
 	height: 378px;
 	margin: 0 auto;
+	display: table;
+}
+
+iframe {
+	margin: 0px;
 }
 
 /* So it expands on larger screens/modern browsers */
-@media screen and (min-width: 1054px) {
+@media screen and (min-width: 1024px) {
 	#stream {
 		min-width: 640px;
 	}
@@ -171,7 +179,7 @@ a {
 	
 	#stream-chat {
 		position: relative;
-		float: left;
+		float: right;
 	}
 }
 
@@ -188,16 +196,16 @@ a {
 	margin: 0 auto;
 }
 
-@media screen and (min-width: 988px) {
+@media screen and (min-width: 1024px) {
 	#volunteers-left {
 		position: relative;
 		float: left;
-		margin-right: 28px;
+		margin-right: 84px;
 	}
 	
 	#volunteers-right {
 		position: relative;
-		float: left;
+		float: right;
 	}
 }
 
@@ -251,11 +259,11 @@ a {
 }
 
 #footer .left {
-	margin-left: 15px;
+	margin-left: 0px;
 }
 
 #footer .right {
-	margin-right: 15px;
+	margin-right: 0px;
 }
 
 
