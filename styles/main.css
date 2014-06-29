@@ -288,6 +288,10 @@ iframe {
 #faq a {
 	color: #2d3339;
 }
+
+#faq p a {
+	color: #bfd6f0;
+}
 /* FOOTER ITEMS */
 #footer, .push {
 	height: 57px; /* .push must be the same height as #footer */
