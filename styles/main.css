@@ -273,7 +273,8 @@ iframe {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	font-weight: 300;
-	background-color: #dedede;
+	background-color: #2d71bd;
+	color: white;
 	text-align: left;
 	
 	padding: 15px;
