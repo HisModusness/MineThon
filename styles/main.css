@@ -242,6 +242,45 @@ iframe {
 	color: grey;
 }
 
+/* FAQ ITEMS */
+#faq-container {
+	background-color: white;
+}
+
+#faq {
+	width: 450px;
+	
+	
+	display: table;
+	margin: 57px auto;
+	margin-top: 28px;
+	text-align: center;
+}
+
+#faq h1 {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	background-color: #edeff0;
+	
+	height: 57px;
+	line-height: 57px;
+	margin-top : 28px;
+	
+}
+
+#faq p {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	background-color: #dedede;
+	text-align: left;
+	
+	padding: 15px;
+	
+	display: none;
+	
+}
 /* FOOTER ITEMS */
 #footer, .push {
 	height: 57px; /* .push must be the same height as #footer */

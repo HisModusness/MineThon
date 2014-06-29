@@ -3,6 +3,8 @@
 		<title>MineThon 4</title>
 		<link rel="stylesheet" href="styles/main.css" title="Main" type="text/css" media="screen" charset="utf-8">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+		<script src="scripts/faq.js"></script>
+		<script src="scripts/jquery-1.11.1.min.js"></script>
 		<meta name="viewport" content="width = 640" />
 	</head>
 	<body>
@@ -45,6 +47,44 @@
 						<iframe frameborder="0" scrolling="no" src="http://twitch.tv/minethon/chat?popout=" height="378" width="376"></iframe>
 					</div>
 
+				</div>
+			</div>
+			
+			<div class="header-container outwrap">
+				<div class="header">
+					<h1>FAQ</h1>
+					<h2>Have any questions? We have answers!</h2>
+				</div>
+			</div>
+			
+			<div id="faq-container" class="outwrap">
+				<div id="faq">
+					<a href="javascript:void(0)"><h1 id="q1h">What is AbleGamers?</h1></a>
+					<p id="q1">AbleGamers is a charity that helps people with disabilities play video games. The charity was founded by Mark Barlet and Stephanie Walker in 2005. Today, AbleGamers donates accessible peripherals to people with disabilities and works with developers to make games more accessible.</p>
+					
+					<a href="javascript:void(0)"><h1 id="q2h">What is MineThon?</h1></a>
+					<p id="q2">MineThon is a 72-hour Minecraft marathon in benefit of AbleGamers. The marathon was founded by Ethan Smith in 2011.</p>
+					
+					<a href="javascript:void(0)"><h1 id="q3h">When is MineThon?</h1></a>
+					<p id="q3">MineThon will start streaming on July 25 at 6 am EST (-4 GMT).</p>
+					
+					<a href="javascript:void(0)"><h1 id="q4h">Where does my donation go?</h1></a>
+					<p id="q4">Your donation goes directly to AbleGamers. MineThon's volunteers can't touch a cent.</p>
+					
+					<a href="javascript:void(0)"><h1 id="q5h">Where can I donate?</h1></a>
+					<p id="q5">Donate any amount with PayPal here.</p>
+					
+					<a href="javascript:void(0)"><h1 id="q6h">Can I play on the MineThon server?</h1></a>
+					<p id="q6">Yes! Donate $10 for white list on play.minethon.com.</p>
+					
+					<a href="javascript:void(0)"><h1 id="q7h">What is AbleGamers?</h1></a>
+					<p id="q7">Yes! MineThon covers shipping costs but not customs costs.</p>
+					
+					<a href="javascript:void(0)"><h1 id="q8h">Is my donation tax deductible?</h1></a>
+					<p id="q8">Yes! The EIN for AbleGamers is 30-0533750.</p>
+					
+					<a href="javascript:void(0)"><h1 id="q9h">What is AbleGamers?</h1></a>
+					<p id="q9">Yes! Email contact@minethon.com for sponsorship opportunities.</p>
 				</div>
 			</div>
 			
@@ -116,5 +156,43 @@
 				</div>
 			</div>
 		</div>
+		
+		<script>
+		$('#q1h').click(function() {
+			$('#q1').slideToggle();
+		});
+		
+		$('#q2h').click(function() {
+			$('#q2').slideToggle();
+		});
+		
+		$('#q3h').click(function() {
+			$('#q3').slideToggle();
+		});
+		
+		$('#q4h').click(function() {
+			$('#q4').slideToggle();
+		});
+		
+		$('#q5h').click(function() {
+			$('#q5').slideToggle();
+		});
+		
+		$('#q6h').click(function() {
+			$('#q6').slideToggle();
+		});
+		
+		$('#q7h').click(function() {
+			$('#q7').slideToggle();
+		});
+		
+		$('#q8h').click(function() {
+			$('#q8').slideToggle();
+		});
+		
+		$('#q9h').click(function() {
+			$('#q9').slideToggle();
+		});
+		</script>
 	</body>
 </html>
