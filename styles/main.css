@@ -192,8 +192,7 @@ iframe {
 
 #volunteers {
 	max-width: 1024px;
-	padding-bottom: 28px;
-	margin-bottom: -57px;
+	padding-bottom: 0px;
 	
 	display: table;
 	margin: 0 auto;
