@@ -176,6 +176,7 @@ iframe {
 		position: relative;
 		float: left;
 		margin-right: 28px;
+		margin-bottom: 0px;
 	}
 	
 	#stream-chat {
@@ -202,6 +203,7 @@ iframe {
 		position: relative;
 		float: left;
 		margin-right: 84px;
+		padding-bottom: 0px;
 	}
 	
 	#volunteers-right {
