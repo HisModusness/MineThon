@@ -233,6 +233,7 @@ iframe {
 	font-size: 2em;
 	font-weight: 300;
 	margin-bottom: 14px;
+	color: #2d3339;
 	
 }
 .volunteer p {
@@ -281,6 +282,10 @@ iframe {
 	
 	display: none;
 	
+}
+
+#faq a {
+	color: #2d3339;
 }
 /* FOOTER ITEMS */
 #footer, .push {
