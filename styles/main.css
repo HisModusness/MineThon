@@ -62,6 +62,9 @@ ul, li {
 	font-weight: 300;
 	color: white;
 	overflow: none;
+	
+	/*super hacky stop the safari font lightening go time yay */
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 #title {
@@ -88,6 +91,14 @@ ul, li {
 .menu-more-items {
 	text-align: center;
 	display: none;
+}
+
+.menu-more-items li:hover {
+	background-color: #3f474f;
+}
+
+.menu-more-items a {
+	color: white;
 }
 
 #menu-share {
