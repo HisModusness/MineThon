@@ -17,15 +17,20 @@
 					<div class="right">
 						<a href="http://www.imraising.com/minethon" target="_blank"><div class="menu-item" id="menu-donate"><p class="centered">Donate</p></div></a>
 					</div>
-					<!--
 					<div class="right">
 						<div class="menu-item" id="menu-share"><p class="centered">Share</p></div>
 					</div>
 					
 					<div class="right">
-						<div class="menu-item" id="menu-more"><p class="centered">More</p></div>
+						<div class="menu-item" id="menu-more">
+							<p class="centered">More</p>
+							<ul class="menu-more-items">
+								<li>MineThon</li>
+								<li>FAQ</li>
+								<li>Volunteers</li>
+							</ul>
+						</div>
 					</div>
-					-->
 					
 				</div>
 			</div>
@@ -33,7 +38,7 @@
 			<div class="header-container outwrap" style="padding-top: 57px">
 				<div class="header">
 					<h1>We're marathoning Minecraft for AbleGamers</h1>
-					<h2>MineThon will start streaming on July 25 at 6 am EST (-4 GMT).</h2>
+					<h2>MineThon will start streaming on July 25 at 6 am EDT (-4 GMT).</h2>
 				</div>
 			</div>
 
@@ -202,6 +207,15 @@
 			$('#q9h').click(function() {
 				$('#q9').slideToggle();
 			})
+			
+			$("#menu-more").hover(
+				function() {
+					$('.menu-more-items').slideDown('medium');
+				}, 
+				function() {
+					$('.menu-more-items').slideUp('medium');
+				}
+			);
 
 		});
 				
