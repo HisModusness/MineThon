@@ -63,7 +63,7 @@ ul, li {
 	color: white;
 	overflow: none;
 	
-	/*super hacky stop the safari font lightening go time yay */
+	/* prevents safari from lightening the font when jquery wants to animate an element */
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -345,8 +345,7 @@ iframe {
 	width: 350px;
 	height: 57px;
 	line-height: 57px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 
 	margin-top: 28px;
 	font-size: 1.2em;
@@ -355,9 +354,10 @@ iframe {
 }
 
 #donate a {
+	text-align: center;
 	color: #2d3339;
 	width: 350px;
-	background-color: red;
+	display: block;
 }
 
 /* FOOTER ITEMS */
