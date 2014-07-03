@@ -114,8 +114,6 @@ a {
 	padding-top: 114px;
 	font-size: 2.0em;
 	font-weight: 300;
-	
-	
 }
 
 .header h2 {
@@ -294,6 +292,48 @@ iframe {
 #faq p a {
 	color: #bfd6f0;
 }
+
+/* DONATE ITEMS */
+#donate-container {
+	background-color: #2d3339;
+}
+
+#donate {
+	height: 342px;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: white;
+}
+
+#donate h1 {
+	text-align: center;
+	max-width: 1024px;
+	min-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding-top: 114px;
+	font-size: 2.0em;
+	font-weight: 300;
+}
+
+#donate h2 {
+	text-align: center;
+	width: 350px;
+	height: 57px;
+	line-height: 57px;
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: 28px;
+	font-size: 1.2em;
+	font-weight: 300;
+	background-color: #fca30a;
+}
+
+#donate a {
+	color: #2d3339;
+}
+
 /* FOOTER ITEMS */
 #footer, .push {
 	height: 57px; /* .push must be the same height as #footer */
