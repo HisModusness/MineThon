@@ -220,17 +220,30 @@
 			// Set up menu hover actions
 			$("#menu-more").hover(
 				function() {
-					$('.menu-more-items').toggle();
+					$('.menu-more-items').show();
 				}, 
 				function() {
-					$('.menu-more-items').toggle();
+					$('.menu-more-items').hide();
 				}
 			);
 			
 			$("#menu-more").click(function() {
 				$('.menu-more-items').toggle();
-			})
-
+			}) 
+			
+			/*
+			$('#menu-more').on({
+			    mouseover: function(){
+			        $(this).css({background: '#F93'});
+			    },
+			     mouseleave: function(){
+			        $(this).css({background: '#CCC'});
+			    },
+			    click: function(){
+			        $(this).off('mouseleave');
+			    }
+			});
+			*/
 		});
 		
 		// Initialize smooth scrolling library
