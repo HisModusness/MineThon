@@ -186,6 +186,9 @@ ul, li {
 
 iframe {
 	margin: 0px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
 }
 
 /* So it expands on larger screens/modern browsers */
@@ -254,6 +257,41 @@ iframe {
 
 #faq p a {
 	color: #bfd6f0;
+}
+
+#sponsors-container {
+	background-color: white;
+}
+
+#sponsors {
+	max-width: 1024px;
+	padding-bottom: 0px;
+}
+
+@media screen and (min-width: 1024px) {
+	#sponsors-left {
+		
+	}
+	
+	#sponsors-right {
+	
+	}
+}
+
+.sponsor {
+	
+}
+
+.sponsor img {
+	
+}
+
+.sponsor h1 {
+	
+}
+
+.sponsor p {
+	
 }
 
 /* VOLUNTEER ITEMS */
