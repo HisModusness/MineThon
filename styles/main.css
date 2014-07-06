@@ -266,32 +266,58 @@ iframe {
 #sponsors {
 	max-width: 1024px;
 	padding-bottom: 0px;
+	
+	display: table;
+	margin: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {
 	#sponsors-left {
-		
+		position: relative;
+		float: left;
+		margin-right: 84px;
+		padding-bottom: 0px;
 	}
 	
 	#sponsors-right {
-	
+		position: relative;
+		float: right;
 	}
 }
 
 .sponsor {
+	width: 470px;
+	padding-top: 57px;
+	padding-bottom: 57px;
 	
+	display:table;
+	
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 .sponsor img {
+	width: 350;
+	height: 117;
 	
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 14px;
+
 }
 
 .sponsor h1 {
-	
+	text-align: center;
+	font-size: 2em;
+	font-weight: 300;
+	margin-bottom: 14px;
+	color: #2d3339;
 }
 
 .sponsor p {
-	
+	text-align: center;
+	font-size: 1em;
+	font-weight: 300;
+	color: grey;
 }
 
 /* VOLUNTEER ITEMS */
