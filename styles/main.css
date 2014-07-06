@@ -207,6 +207,55 @@ iframe {
 	}
 }
 
+/* FAQ ITEMS */
+#faq-container {
+	background-color: white;
+}
+
+#faq {
+	width: 450px;
+	
+	
+	display: table;
+	margin: 57px auto;
+	margin-top: 28px;
+	text-align: center;
+}
+
+#faq h1 {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: 300;
+	background-color: #edeff0;
+	
+	height: 57px;
+	line-height: 57px;
+	margin-top : 28px;
+	
+}
+
+#faq p {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	background-color: #2d71bd;
+	color: white;
+	text-align: left;
+	
+	padding: 15px;
+	
+	display: none;
+	
+}
+
+#faq a {
+	color: #2d3339;
+}
+
+#faq p a {
+	color: #bfd6f0;
+}
+
 /* VOLUNTEER ITEMS */
 #volunteers-container {
 	background-color: white;
@@ -268,54 +317,7 @@ iframe {
 	color: grey;
 }
 
-/* FAQ ITEMS */
-#faq-container {
-	background-color: white;
-}
 
-#faq {
-	width: 450px;
-	
-	
-	display: table;
-	margin: 57px auto;
-	margin-top: 28px;
-	text-align: center;
-}
-
-#faq h1 {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	font-size: 1.2em;
-	font-weight: 300;
-	background-color: #edeff0;
-	
-	height: 57px;
-	line-height: 57px;
-	margin-top : 28px;
-	
-}
-
-#faq p {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	font-weight: 300;
-	background-color: #2d71bd;
-	color: white;
-	text-align: left;
-	
-	padding: 15px;
-	
-	display: none;
-	
-}
-
-#faq a {
-	color: #2d3339;
-}
-
-#faq p a {
-	color: #bfd6f0;
-}
 
 /* DONATE ITEMS */
 #donate-container {
