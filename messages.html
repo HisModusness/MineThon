@@ -20,19 +20,7 @@
 		</style>	
 	</head>
 	<body>
-		<div class="center"><p id="rotate">Fart</p></div>
-		<script>
-			var terms = ["STEVEB says: YEEAAAAAAHHHHHHHHHH WOOOOOOOHHHHHHH", "It's 10:00 or something", "we've earned $texas", "<img src=images/ethan.png />"]; //array of terms to rotate
-
-			function rotateTerm() {
-				var ct = $("#rotate").data("term") || 0;
-				$("#rotate").data("term", ct == terms.length -1 ? 0 : ct + 1).html(terms[ct]).fadeIn().delay(2000).fadeOut(200, rotateTerm);
-			}
-			
-			$(document).ready(function() {
-				rotateTerm();
-			});
-
-		</script>
+		<div class="center"><p id="rotate">The message stuff is broken or something</p></div>
+		<script src="scripts/messages.js"></script>
 	</body>
 </html>
