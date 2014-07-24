@@ -30,6 +30,7 @@
 							<p class="centered">More</p>
 							<ul class="menu-more-items">
 								<a data-scroll href="#go-stream"><li>Stream</li></a>
+								<a data-scroll href="#go-schedule"><li>Schedule</li></a>
 								<a data-scroll href="#go-faq"><li>FAQ</li></a>
 								<a data-scroll href="#go-sponsors"><li>Sponsors</li></a>
 								<a data-scroll href="#go-volunteers"><li>Volunteers</li></a>
@@ -58,6 +59,61 @@
 						<iframe frameborder="0" scrolling="no" src="http://twitch.tv/minethon/chat?popout=" height="378" width="376"></iframe>
 					</div>
 
+				</div>
+			</div>
+			
+			<a id="go-schedule"></a>
+			<div class="header-container outwrap">
+				<div class="header">
+					<h1>Schedule</h1>
+					<h2>What are we up to now?</h2>
+				</div>
+			</div>
+			
+			<div id="schedule-container" class="outwrap">
+				<div id="schedule">
+					<a href="javascript:void(0)"><h1 id="s1h">July 25</h1></a>
+					<ul id="s1">
+						<li>6 am &mdash; MineThon start, Mega raffle, Razer Chimera raffle</li>
+						<li>10 am &mdash; Creeper Beanie auction</li>
+						<li>12 pm &mdash; AbleGamers Diamond Sword raffle, AbleGamers & MineThon Shirts auction</li>
+						<li>2 pm &mdash; Evil Controller auction</li>
+						<li>4 pm &mdash; BionikMonkey 24" JeromeASF Doodz auction</li>
+						<li>6 pm &mdash; BionikMonkey 16" Ethan Buddiez raffle, BionikMonkey 24" Custom Doodz auction</li>
+						<li>10 pm &mdash; BionikMonkey 12" Ethan Pillow auction</li>
+					</ul>
+					</p>
+					
+					<a href="javascript:void(0)"><h1 id="s2h">July 26</h1></a>
+					<ul id="s2">
+						<li>12 am &mdash; AbleGamers Shirt raffle</li>
+						<li>6 am &mdash; MineThon Shirt raffle</li>
+						<li>10 am &mdash; BionikMonkey Custom Doodz auction</li>
+						<li>12 pm &mdash; Razer Electra raffle, AbleGamers & MineThon Shirts auction</li>
+						<li>2 pm &mdash; Guude & Coestar Skype, BionikMonkey 16" Guude & Coestar Buddiez auction</li>
+						<li>4 pm &mdash; Evil Controllers auction</li>
+						<li>6 pm &mdash; BionikMonkey 16" NikSapien Buddiez raffle, BionikMonkey 12" Custom Pillow auction</li>
+						<li>10 pm &mdash; Creeper Beanie auction</li>
+					</ul>
+					
+					<a href="javascript:void(0)"><h1 id="s3h">July 27</h1></a>
+					<ul id="s3">
+						<li>12 am &mdash; AbleGamers Shirt raffle</li>
+						<li>6 am &mdash; MineThon Shirt raffle</li>
+						<li>10 am &mdash; MineThon Cooler auction</li>
+						<li>12 pm &mdash; Razer Chimera raffle</li>
+						<li>2 pm &mdash; Creeper Beanie auction</li>
+						<li>4 pm &mdash; BionikMonkey 24" Custom Buddiez auction</li>
+						<li>6 pm &mdash; MineThon Shirt raffle, MineThon 6"x9" Banner auction</li>
+						<li>10 pm &mdash; BionikMonkey 12" Custom Pillow auction</li>
+					</ul>
+					
+					<a href="javascript:void(0)"><h1 id="s4h">July 28</h1></a>
+					<ul id="s4">
+						<li>12 am &mdash; AbleGamers Shirt raffle</li>
+						<li>6 am &mdash; MineThon ends</li>
+					</ul>
+					
 				</div>
 			</div>
 			
@@ -122,6 +178,11 @@
 							<h1>Tailored Systems</h1>
 							<p>Reliable appliances and electronics</p>
 						</div>
+						<div class="sponsor">
+							<a href="http://www.razerzone.com" target="_blank"><img src="images/razer.png" /></a>
+							<h1>Razer</h1>
+							<p>Fast, customizable Minecraft servers</p>
+						</div>
 					</div>
 					<div id="sponsors-right">
 						<div class="sponsor">
@@ -133,6 +194,12 @@
 							<a href="http://www.thegeorgecentre.com/" target="_blank"><img src="images/thegeorge.png" /></a>
 							<h1>The George Centre</h1>
 							<p>Convenient shopping in Grantham, England</p>
+						</div>
+						
+						<div class="sponsor">
+							<a href="http://www.evilcontrollers.com" target="_blank"><img src="images/evilcontrollers.png" /></a>
+							<h1>CreeperHost</h1>
+							<p>Fast, customizable Minecraft servers</p>
 						</div>
 					</div>
 
@@ -257,7 +324,6 @@
 				$('#q9').slideToggle();
 			})
 			
-			
 			// Set up menu hover actions
 			$("#menu-more").hover(
 				function() {
@@ -271,6 +337,23 @@
 			$("#menu-more").click(function() {
 				$('.menu-more-items').toggle();
 			}) 
+			
+			// Set up schedule accordion
+			$('#s1h').click(function() {
+				$('#s1').slideToggle();
+			})
+			
+			$('#s2h').click(function() {
+				$('#s2').slideToggle();
+			})
+			
+			$('#s3h').click(function() {
+				$('#s3').slideToggle();
+			})
+			
+			$('#s4h').click(function() {
+				$('#s4').slideToggle();
+			})
 		});
 		
 		// Initialize smooth scrolling library
