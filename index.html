@@ -3,7 +3,6 @@
 		<title>MineThon 4</title>
 		<link rel="stylesheet" href="styles/main.css" title="Main" type="text/css" media="screen" charset="utf-8">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
-		<script src="scripts/faq.js"></script>
 		<script src="scripts/jquery-1.11.1.min.js"></script>
 		<script src="scripts/smooth-scroll.min.js"></script>
 		<meta name="viewport" content="width = device-width" />
@@ -62,6 +61,50 @@
 				</div>
 			</div>
 			
+			<a id="go-donors"></a>
+			<div class="header-container outwrap">
+				<div class="header">
+					<h1>Top Donors</h1>
+					<h2>Who has donated the most so far?</h2>
+				</div>
+			</div>
+			
+			<div id="donors-container" class="outwrap">
+				<div id="donors">
+					<div id="donors-left">
+						<div class="donor">
+							<h1 id="d1h">Donor 1</h1>
+							<p id="d1p">$10</p>
+						</div>
+						<div class="donor">
+							<h1 id="d2h">Donor 2</h1>
+							<p id="d2p">$9</p>
+						</div>
+						<div class="donor">
+							<h1 id="d3h">Donor 3</h1>
+							<p id="d3p">$8</p>
+						</div>
+					</div>
+					<div id="donors-right">
+						<div class="donor">
+							<h1 id="d4h">Donor 4</h1>
+							<p id="d4p">$7</p>
+						</div>
+						<div class="donor">
+							<h1 id="d5h">Donor 5</h1>
+							<p id="d5p">$6</p>
+						</div>
+						
+						<div class="donor">
+							<h1 id="d6h">Donor 6</h1>
+							<p id="d6p">$5</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			
 			<a id="go-schedule"></a>
 			<div class="header-container outwrap">
 				<div class="header">
@@ -76,7 +119,7 @@
 					<ul id="s1">
 						<li>6 am &mdash; MineThon start, Mega raffle, Razer Chimera raffle</li>
 						<li>10 am &mdash; Creeper Beanie auction</li>
-						<li>12 pm &mdash; AbleGamers Diamond Sword raffle, AbleGamers & MineThon Shirts auction</li>
+						<li>12 pm &mdash; MineThon Shirt raffle, AbleGamers & MineThon Shirts auction</li>
 						<li>2 pm &mdash; Evil Controller auction</li>
 						<li>4 pm &mdash; BionikMonkey 24" JeromeASF Doodz auction</li>
 						<li>6 pm &mdash; BionikMonkey 16" Ethan Buddiez raffle, BionikMonkey 24" Custom Doodz auction</li>
@@ -284,7 +327,8 @@
 				</div>
 			</div>
 		</div>
-		
+		<script src="scripts/topdonors.js"></script>
+		<span id="jsonpcontainer"><script id="jsonp" type="application/javascript" src="http://imraising.com/minethon/json/livedata.jsonp"></script></span>
 		<script>
 		$(document).ready(function() {
 			// Set up collapsing FAQ questions
@@ -358,7 +402,9 @@
 		
 		// Initialize smooth scrolling library
 		smoothScroll.init({easing: 'easeInOutCubic', offset: 57});
-
+		
+		// Start the top donor cycle
+		
 				
 		</script>
 	</body>
