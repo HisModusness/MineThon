@@ -5,8 +5,6 @@
 	-webkit-font-smoothing: subpixel-antialiased;
 	}
 html, body {
-	height: 1920px 1080px;
-	
 }
 
 body {
@@ -39,6 +37,7 @@ body {
 .big-header {
 	font-weight: bold;
 	font-size: 48px;
+	margin-bottom: 26px;
 }
 
 .medium-header {
@@ -49,7 +48,7 @@ body {
 	font-weight: 300;
 	font-style: italic;
 	font-size: 24px;
-	margin-top: 26px;
+	margin-bottom: 26px;
 }
 
 .button {
