@@ -36,7 +36,23 @@ body {
   text-align: center;
 }
 
-#donate {
+.big-header {
+	font-weight: bold;
+	font-size: 48px;
+}
+
+.medium-header {
+	
+}
+
+.small-header {
+	font-weight: 300;
+	font-style: italic;
+	font-size: 24px;
+	margin-top: 26px;
+}
+
+.button {
 	background-color: #01a6ea;
 	
 	display: inline-block;
@@ -44,13 +60,15 @@ body {
 	width: auto;
 	
 	border-radius: 8px;
+	
+	margin-top: 26px;
 }
 
-#donate:hover {
+.button:hover {
 	background-color: #018ac3;
 }
 
-#donate h3 {
+.button-text {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
@@ -60,20 +78,6 @@ body {
 	
 	padding-left: 36px;
 	padding-right: 36px;
-}
-
-h1 {
-	font-weight: bold;
-	font-size: 48px;
-	line-height: 36px;
-	margin-bottom: 26px;
-}
-
-h2 {
-	font-weight: 300;
-	font-style: italic;
-	font-size: 24px;
-	margin-bottom: 26px;
 }
 
 a {
