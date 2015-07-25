@@ -4,12 +4,55 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 		<script src="scripts/jquery-1.11.1.min.js"></script>
 		<script src="scripts/smooth-scroll.min.js"></script>
+		<script src="scripts/countdown.min.js"></script>
 	</head>
 	<body>
 		<div id="content-wrap">
 			<div id=content>
 				<h1>PLAY MINECRAFT. SUPPORT CHARITY.</h1>
+				<h2 id="countdown">48 hour Minecraft stream, going live in <span id="countdown-days">420 days and</span> <span id="countdown-hours">69 hours</span>.</h2>
+				<h2 id="countdown-holder"></h2>
 			</div>
 		</div>
+		<script type="text/javascript">
+			function update(daySpan, hourSpan, targetDate) {
+				var cd = countdown(null, targetDate, countdown.DAYS | countdown.HOURS);
+				if (cd.value > 0) {						// Minethon starts in the future
+					if (cd.days == 1) {
+						daySpan.innerHTML = cd.days.toString() + " day and";
+					}
+					else if (cd.days > 1) {
+						daySpan.innerHTML = cd.days.toString() + " days and";
+					}
+					else {
+						daysPan.innerHTML = "";
+					}
+					
+					if (cd.hours > 1) {
+						hourSpan.innerHTML = cd.hours.toString() + " hours";
+					}
+					else {
+						hourSpan.innerHTML = cd.hours.toString() + " hour";
+					}
+				}
+				
+				else if (cd.value > -172800000) {		// Minethon is currently happening
+					countdownText = document.getElementById("countdown").innerHTML = "Minethon is happening now!";
+				}
+				
+				else {									// Minethon is over
+					countdownText = document.getElementById("countdown").innerHTML = "Minethon is over!";
+				}
+				
+			}
+			var daySpan = document.getElementById("countdown-days");
+			var hourSpan = document.getElementById("countdown-hours");
+			targetDate = new Date(1442077200000); // September 12, 2015;
+ 
+			update(daySpan, hourSpan, targetDate);
+			setInterval(function(){
+				update(daySpan, hourSpan, targetDate);
+  			}, 1000);
+		</script>
 	</body>
 </html>

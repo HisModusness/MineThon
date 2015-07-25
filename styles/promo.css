@@ -1,5 +1,6 @@
 * {
 	margin: 0;
+	padding: 0;
 		/* prevents safari from lightening the font when jquery wants to animate an element */
 	-webkit-font-smoothing: subpixel-antialiased;
 	}
@@ -24,11 +25,11 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  width: 800px;
+  width: 1280px;
   margin-left: auto;
   margin-right: auto;
   
-  font-family: "Open Sans";
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: white;
   
   display: block;
@@ -37,5 +38,13 @@ body {
 
 h1 {
 	font-weight: bold;
-	font-size; 48px;
+	font-size: 48px;
+	line-height: 36px;
+	margin-bottom: 26px;
+}
+
+h2 {
+	font-weight: 300;
+	font-style: italic;
+	font-size: 24px;
 }
