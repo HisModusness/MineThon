@@ -7,32 +7,34 @@
 html, body {
 }
 
-body {
-	background-image: url("../images/Lobby.jpg");
-	background-position: center center;
-	background-size: cover;
+html {
+	background: url(../images/Lobby.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #content-wrap {
-	 background-color: rgba(19, 11, 34, 0.7);
-	 height: 100%;
-	 width: 100%;
-	 position: fixed;
+	background-color: rgba(19, 11, 34, 0.7);
+	height: 100%;
+	width: 100%;
+	position: fixed;
 }
 
 #content {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
   
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: white;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: white;
   
-  display: block;
-  text-align: center;
+	display: block;
+	text-align: center;
 }
 
 #play-button {
