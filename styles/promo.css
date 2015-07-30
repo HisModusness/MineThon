@@ -17,13 +17,14 @@ body {
 	 background-color: rgba(19, 11, 34, 0.7);
 	 height: 100%;
 	 width: 100%;
+	 position: fixed;
 }
 
 #content {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  width: 1280px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   
@@ -34,10 +35,19 @@ body {
   text-align: center;
 }
 
+#play-button {
+	width: 50px;
+	height: 50px;
+}
+
+#play-button:hover path {
+	fill: #aaaaaa;
+}
+
 .big-header {
 	font-weight: bold;
 	font-size: 48px;
-	margin-bottom: 26px;
+	line-height: 48px;
 }
 
 .medium-header {
@@ -48,8 +58,6 @@ body {
 	font-weight: 300;
 	font-style: italic;
 	font-size: 24px;
-	line-height: 48px;
-	margin-bottom: 26px;
 }
 
 .button {
@@ -60,8 +68,6 @@ body {
 	width: auto;
 	
 	border-radius: 8px;
-	
-	margin-top: 10px;
 }
 
 .button:hover {
@@ -78,6 +84,12 @@ body {
 	
 	padding-left: 36px;
 	padding-right: 36px;
+	
+	text-align: center;
+}
+
+.spacer {
+	margin-bottom: 36px;
 }
 
 a {
