@@ -1,0 +1,567 @@
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -57px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.outwrap {
+	min-width: 640px !important;
+	width: 100%;
+}
+
+.content {
+	max-width: 1024px;
+	min-width: 640px;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #2d71bd;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* GENERAL USE */
+
+.left {
+	
+	position: relative;
+	float: left;
+}
+
+.right {
+	
+	position: relative;
+	float: right;
+}
+
+/* TITLEBAR/NAVBAR ITEMS*/
+#navbar-container {
+	background-color: #2d3339;
+	position: fixed;
+	z-index: 10 !important;
+	height: 57px;
+}
+
+#navbar {
+	height: 57px;
+	line-height: 57px;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	color: white;
+	overflow: none;
+	
+	/* prevents safari from lightening the font when jquery wants to animate an element */
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+#title {
+	font-size: 1.5em;
+	margin-left: 15px;
+}
+
+.menu-item {
+	width: 114px;
+	color: white;
+}
+
+.centered {
+	width: 114px;
+	text-align:center;
+	font-size: 1em;
+}
+
+#menu-more {
+	background-color: #363d44;
+
+}
+
+.menu-more-items {
+	text-align: center;
+	display: none;
+}
+
+.menu-more-items li:hover {
+	background-color: #3f474f;
+}
+
+.menu-more-items a {
+	color: white;
+}
+
+#menu-share {
+	background-color: #3f474f;
+
+}
+
+#menu-donate {
+	background-color: #fca30a;
+	color: black;
+
+}
+
+#menu-donate a {
+	color: black;
+}
+
+/* HEADER ITEMS */
+.header-container {
+	background-color: #2d71bd;
+}
+
+.header {
+	height: 342px;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: white;
+	
+}
+
+.header h1 {
+	text-align: center;
+	max-width: 1024px;
+	min-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding-top: 114px;
+	font-size: 2.0em;
+	font-weight: 300;
+}
+
+.header h2 {
+	text-align: center;
+	max-width: 1024px;
+	min-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: 28px;
+	font-size: 1.2em;
+	font-weight: 300;
+	color: #bfd6f0;
+	
+}
+
+/* STREAM ITEMS */
+#stream-container {
+	background-color: white;
+}
+
+#stream {
+	height: 378px;
+	padding-top: 57px;
+	padding-bottom: 57px;
+	max-width: 1024px;
+	margin: 0 auto;
+	display: table;
+}
+
+#stream-video {
+	background-color: #363d44;
+	width: 620px;
+	height: 378px;
+	margin-bottom: 28px;
+	display: table;
+}
+
+#stream-chat {
+	background-color: #edeff0;
+	width: 376px;
+	height: 378px;
+	margin: 0 auto;
+	display: table;
+}
+
+iframe {
+	margin: 0px;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+/* So it expands on larger screens/modern browsers */
+@media screen and (min-width: 1024px) {
+	#stream {
+		min-width: 640px;
+	}
+
+	#stream-video {
+		position: relative;
+		float: left;
+		margin-right: 28px;
+		margin-bottom: 0px;
+	}
+	
+	#stream-chat {
+		position: relative;
+		float: right;
+	}
+}
+
+/* TOP DONOR ITEMS */
+#donors-container {
+	background-color: white;
+}
+
+#donors {
+	max-width: 1024px;
+	padding-bottom: 0px;
+	
+	display: table;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+	#donors-left {
+		position: relative;
+		float: left;
+		margin-right: 57px;
+		padding-bottom: 0px;
+	}
+	
+	#donors-right {
+		position: relative;
+		float: right;
+	}
+}
+
+.donor {
+	width: 470px;
+	height: 57px;
+	margin-top: 28px;
+	padding-top: 10px;
+	margin-bottom: 28px;
+	padding-bottom: 10px;
+	
+	display:table;
+	
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	background-color: #edeff0;
+}
+
+.donor img {
+	width: 350;
+	height: 117;
+	
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 14px;
+
+}
+
+.donor h1 {
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: 300;
+	margin-bottom: 14px;
+	color: #2d3339;
+}
+
+.donor p {
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 300;
+	color: grey;
+}
+
+
+/* SCHEDULE ITEMS */
+#schedule {
+	width: 450px;
+	
+	
+	display: table;
+	margin: 57px auto;
+	margin-top: 28px;
+	text-align: center;
+}
+
+#schedule h1 {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: 300;
+	background-color: #edeff0;
+	
+	height: 57px;
+	line-height: 57px;
+	margin-top : 28px;
+	
+}
+
+#schedule ul {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	background-color: #2d71bd;
+	color: white;
+	text-align: left;
+	
+	padding: 15px;
+	
+	/* display: none; */
+	
+}
+
+#schedule a {
+	color: #2d3339;
+}
+
+#schedule li {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+/* FAQ ITEMS */
+#faq-container {
+	background-color: white;
+}
+
+#faq {
+	width: 450px;
+	
+	
+	display: table;
+	margin: 57px auto;
+	margin-top: 28px;
+	text-align: center;
+}
+
+#faq h1 {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: 300;
+	background-color: #edeff0;
+	
+	height: 57px;
+	line-height: 57px;
+	margin-top : 28px;
+	
+}
+
+#faq p {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	background-color: #2d71bd;
+	color: white;
+	text-align: left;
+	
+	padding: 15px;
+	
+	display: none;
+	
+}
+
+#faq a {
+	color: #2d3339;
+}
+
+#faq p a {
+	color: #bfd6f0;
+}
+
+/* SPONSOR ITEMS*/
+#sponsors-container {
+	background-color: white;
+}
+
+#sponsors {
+	max-width: 1024px;
+	padding-bottom: 0px;
+	
+	display: table;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+	#sponsors-left {
+		position: relative;
+		float: left;
+		margin-right: 84px;
+		padding-bottom: 0px;
+	}
+	
+	#sponsors-right {
+		position: relative;
+		float: right;
+	}
+}
+
+.sponsor {
+	width: 470px;
+	padding-top: 57px;
+	padding-bottom: 57px;
+	
+	display:table;
+	
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.sponsor img {
+	width: 350;
+	height: 117;
+	
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 14px;
+
+}
+
+.sponsor h1 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: 300;
+	margin-bottom: 14px;
+	color: #2d3339;
+}
+
+.sponsor p {
+	text-align: center;
+	font-size: 1em;
+	font-weight: 300;
+	color: grey;
+}
+
+/* VOLUNTEER ITEMS */
+#volunteers-container {
+	background-color: white;
+}
+
+#volunteers {
+	max-width: 1024px;
+	padding-bottom: 0px;
+	
+	display: table;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+	#volunteers-left {
+		position: relative;
+		float: left;
+		margin-right: 84px;
+		padding-bottom: 0px;
+	}
+	
+	#volunteers-right {
+		position: relative;
+		float: right;
+	}
+}
+
+
+.volunteer {
+	width: 470px;
+	padding-top: 57px;
+	padding-bottom: 57px;
+	
+	display:table;
+	
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.volunteer img {
+	width: 144px;
+	
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 14px;
+}
+
+.volunteer h1 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: 300;
+	margin-bottom: 14px;
+	color: #2d3339;
+	
+}
+.volunteer p {
+	text-align: center;
+	font-size: 1em;
+	font-weight: 300;
+	color: grey;
+}
+
+
+
+/* DONATE ITEMS */
+#donate-container {
+	background-color: #2d3339;
+}
+
+#donate {
+	height: 342px;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: white;
+}
+
+#donate h1 {
+	text-align: center;
+	max-width: 1024px;
+	min-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding-top: 114px;
+	font-size: 2.0em;
+	font-weight: 300;
+}
+
+#donate h2 {
+	text-align: center;
+	width: 350px;
+	height: 57px;
+	line-height: 57px;
+	margin: 0 auto;
+
+	margin-top: 28px;
+	font-size: 1.2em;
+	font-weight: 300;
+	background-color: #fca30a;
+}
+
+#donate a {
+	text-align: center;
+	color: #2d3339;
+	width: 350px;
+	display: block;
+}
+
+/* FOOTER ITEMS */
+#footer, .push {
+	height: 57px; /* .push must be the same height as #footer */
+}
+
+#footer-container {
+	background-color: #edeff0;
+}
+
+#footer {
+	line-height: 57px;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+}
+
+#footer .left {
+	margin-left: 15px;
+}
+
+#footer .right {
+	margin-right: 15px;
+}
+
+
