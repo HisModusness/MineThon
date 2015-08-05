@@ -1,11 +1,11 @@
 <html>
 	<head>
-		<title>MineThon 4</title>
-		<META http-equiv="refresh" content="URL=0;promo.html">
+		<title>MineThon 5</title>
 		<link rel="stylesheet" href="styles/main.css" title="Main" type="text/css" media="screen" charset="utf-8">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 		<script src="scripts/jquery-1.11.1.min.js"></script>
 		<script src="scripts/smooth-scroll.min.js"></script>
+		<script src="scripts/countdown.min.js"></script>
 		<meta name="viewport" content="width = device-width" />
 	</head>
 	<body>
@@ -51,14 +51,13 @@
 			<a id="go-stream"></a>
 			<div class="header-container outwrap" style="padding-top: 57px">
 				<div class="header">
-					<h1>We're marathoning Minecraft for AbleGamers</h1>
-					<h2>MineThon will start streaming on July 25 at 6 am EDT.</h2>
+					<h1>PLAY MINECRAFT. SUPPORT ABLEGAMERS.</h1>
+					<h2>48-hour Minecraft charity stream, going live in <span id="countdown-span">some days and some hours</span>.</h2>
 				</div>
 			</div>
 
 			<div id="stream-container" class="outwrap">
 				<div id="stream">
-
 					<div id="stream-video">
 						<object type="application/x-shockwave-flash" height="378" width="620" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=minethon" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=minethon&auto_play=true&start_volume=25" /></object>
 					</div>					
@@ -412,6 +411,51 @@
 		
 		// Start the top donor cycle
 		//ajaxVersion();
+		
+		// Countdown script
+		function update(countdownSpan, targetDate) {
+				var cd = countdown(null, targetDate, countdown.DAYS | countdown.HOURS);
+				var countdownString = "";
+				if (cd.value > 0) {						// Minethon starts in the future
+					if (cd.days == 1) {
+						countdownString += cd.days.toString() + " day";
+					}
+					else if (cd.days > 1) {
+						countdownString += cd.days.toString() + " days";
+					}
+					
+					if (cd.days > 0 && cd.hours > 0) {
+						countdownString += " and ";
+					}
+					
+					if (cd.hours == 1) {
+						countdownString += cd.hours.toString() + " hour";	
+					}
+					
+					else if (cd.hours > 1) {
+						countdownString += cd.hours.toString() + " hours";
+					}
+					
+					countdownSpan.innerHTML = countdownString;
+				}
+				
+				else if (cd.value > -172800000) {		// Minethon is currently happening
+					countdownText = document.getElementById("countdown").innerHTML = "Minethon is happening now!";
+				}
+				
+				else {									// Minethon is over
+					countdownText = document.getElementById("countdown").innerHTML = "Minethon is over!";
+				}
+				
+			}
+			var countdownSpan = document.getElementById("countdown-span");
+			targetDate = new Date(1442077200000); // September 12, 2015;
+ 
+			update(countdownSpan, targetDate);
+			setInterval(function(){
+				update(countdownSpan, targetDate);
+  			}, 1000);
+
 				
 		</script>
 	</body>
