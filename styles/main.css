@@ -73,7 +73,8 @@ ul, li {
 }
 
 .menu-item {
-	width: 114px;
+	/* width: 114px; */
+	background-color: #3f474f;
 	color: white;
 }
 
@@ -90,7 +91,7 @@ ul, li {
 
 .menu-more-items {
 	text-align: center;
-	display: none;
+	display: inline;
 }
 
 .menu-more-items li:hover {
@@ -119,13 +120,18 @@ ul, li {
 /* HEADER ITEMS */
 .header-container {
 	background-color: #2d71bd;
+	background: url(../images/Lobby.jpg) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .header {
 	height: 342px;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	color: white;
-	
+	background-color: rgba(19, 11, 34, 0.7);
 }
 
 .header h1 {
