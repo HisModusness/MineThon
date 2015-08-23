@@ -10,7 +10,7 @@
 			<div id=content>
 				<p class="big-header">PLAY MINECRAFT. SUPPORT ABLEGAMERS.</p>
 				<div class="spacer"></div>
-				<p class="small-header">48-hour Minecraft charity stream, going live in <span id="countdown-days">some days and</span> <span id="countdown-hours">some hours</span>.</p>
+				<p class="small-header">48-hour Minecraft charity stream, going live in <span id="countdown-span">some days and some hours</span>.</p>
 				<div class="spacer"></div>
 				<a href="https://imraising.tv/u/minethon" target="_blank"><div class="button"><p class="button-text">DONATE</p></div></a>
 				<div class="spacer"></div>
@@ -22,25 +22,30 @@
 			</div>
 		</div>
 		<script type="text/javascript">
-			function update(daySpan, hourSpan, targetDate) {
+			function update(countdownSpan, targetDate) {
 				var cd = countdown(null, targetDate, countdown.DAYS | countdown.HOURS);
+				var countdownString = "";
 				if (cd.value > 0) {						// Minethon starts in the future
 					if (cd.days == 1) {
-						daySpan.innerHTML = cd.days.toString() + " day and";
+						countdownString += cd.days.toString() + " day";
 					}
 					else if (cd.days > 1) {
-						daySpan.innerHTML = cd.days.toString() + " days and";
-					}
-					else {
-						daysPan.innerHTML = "";
+						countdownString += cd.days.toString() + " days";
 					}
 					
-					if (cd.hours > 1) {
-						hourSpan.innerHTML = cd.hours.toString() + " hours";
+					if (cd.days > 0 && cd.hours > 0) {
+						countdownString += " and ";
 					}
-					else {
-						hourSpan.innerHTML = cd.hours.toString() + " hour";
+					
+					if (cd.hours == 1) {
+						countdownString += cd.hours.toString() + " hour";	
 					}
+					
+					else if (cd.hours > 1) {
+						countdownString += cd.hours.toString() + " hours";
+					}
+					
+					countdownSpan.innerHTML = countdownString;
 				}
 				
 				else if (cd.value > -172800000) {		// Minethon is currently happening
@@ -52,13 +57,12 @@
 				}
 				
 			}
-			var daySpan = document.getElementById("countdown-days");
-			var hourSpan = document.getElementById("countdown-hours");
+			var countdownSpan = document.getElementById("countdown-span");
 			targetDate = new Date(1442077200000); // September 12, 2015;
  
-			update(daySpan, hourSpan, targetDate);
+			update(countdownSpan, targetDate);
 			setInterval(function(){
-				update(daySpan, hourSpan, targetDate);
+				update(countdownSpan, targetDate);
   			}, 1000);
 		</script>
 	</body>
