@@ -58,8 +58,8 @@ ul, li {
 #navbar {
 	height: 57px;
 	line-height: 57px;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	font-weight: 300;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-weight: 400;
 	color: white;
 	overflow: none;
 	
@@ -136,7 +136,7 @@ ul, li {
 
 .header {
 	height: 342px;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	color: white;
 	background-color: rgba(19, 11, 34, 0.7);
 }
@@ -282,7 +282,7 @@ iframe {
 	
 	display:table;
 	
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	background-color: #edeff0;
 }
 
@@ -324,7 +324,7 @@ iframe {
 }
 
 #schedule h1 {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
 	font-weight: 300;
 	background-color: #edeff0;
@@ -336,7 +336,7 @@ iframe {
 }
 
 #schedule ul {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	font-weight: 300;
 	background-color: #2d71bd;
@@ -374,7 +374,7 @@ iframe {
 }
 
 #faq h1 {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
 	font-weight: 300;
 	background-color: #edeff0;
@@ -386,7 +386,7 @@ iframe {
 }
 
 #faq p {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	font-weight: 300;
 	background-color: #2d71bd;
@@ -441,7 +441,7 @@ iframe {
 	
 	display:table;
 	
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
 .sponsor img {
@@ -504,7 +504,7 @@ iframe {
 	
 	display:table;
 	
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
 .volunteer img {
@@ -539,7 +539,7 @@ iframe {
 
 #donate {
 	height: 342px;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	color: white;
 }
 
@@ -586,7 +586,7 @@ iframe {
 
 #footer {
 	line-height: 57px;
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	font-size: 1em;
 }
