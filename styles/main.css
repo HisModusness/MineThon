@@ -35,13 +35,11 @@ ul, li {
 
 /* GENERAL USE */
 .left {
-	
 	position: relative;
 	float: left;
 }
 
 .right {
-	
 	position: relative;
 	float: right;
 }
@@ -55,8 +53,10 @@ ul, li {
 }
 
 #navbar {
+	position: relative;
+	top: 50%;
+	transform: translateY(-25%);
 	height: 57px;
-	line-height: 57px;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	color: white;
@@ -73,9 +73,8 @@ ul, li {
 }
 
 .menu-item {
-	/* width: 114px; */
-	/*background-color: #3f474f; */
 	color: #d1c4e9;
+	padding-top: 5px;
 }
 
 .menu-item:hover {
@@ -83,7 +82,6 @@ ul, li {
 }
 
 .centered {
-	/*width: 114px;*/
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align:center;
@@ -114,14 +112,22 @@ ul, li {
 }
 
 #menu-donate {
-	background-color: #fca30a;
-	color: black;
-	width: 114px;
-
+	background-color: #512da8;
+	color: white;
+	margin-left: 20px;
+	border-radius: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #menu-donate a {
 	color: black;
+	
+}
+
+#menu-donate:hover {
+	background-color: #d1c4e9;
+	color: #673ab7;
 }
 
 /* HEADER ITEMS */
