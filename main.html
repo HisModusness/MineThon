@@ -345,65 +345,10 @@
 		</div>
 		<script>
 		$(document).ready(function() {
-			// Set up collapsing FAQ questions
-			$('#q1h').click(function() {
-				$('#q1').slideToggle();
+			$('.menu-item').bind('touchstart', function(e) {
+				e.preventDefault();
+				$(this).addClass('highlight');
 			});
-			
-			$('#q2h').click(function() {
-				$('#q2').slideToggle();
-			});
-			
-			$('#q3h').click(function() {
-				$('#q3').slideToggle();
-			});
-			
-			$('#q4h').click(function() {
-				$('#q4').slideToggle();
-			});
-			
-			$('#q5h').click(function() {
-				$('#q5').slideToggle();
-			});
-			
-			$('#q6h').click(function() {
-				$('#q6').slideToggle();
-			});
-			
-			$('#q7h').click(function() {
-				$('#q7').slideToggle();
-			});
-			
-			// Set up menu hover actions
-			$("#menu-more").hover(
-				function() {
-					$('.menu-more-items').show();
-				}, 
-				function() {
-					$('.menu-more-items').hide();
-				}
-			);
-			
-			$("#menu-more").click(function() {
-				$('.menu-more-items').toggle();
-			}) 
-			
-			// Set up schedule accordion
-			$('#s1h').click(function() {
-				$('#s1').slideToggle();
-			})
-			
-			$('#s2h').click(function() {
-				$('#s2').slideToggle();
-			})
-			
-			$('#s3h').click(function() {
-				$('#s3').slideToggle();
-			})
-			
-			$('#s4h').click(function() {
-				$('#s4').slideToggle();
-			})
 		});
 		
 		// Initialize smooth scrolling library
