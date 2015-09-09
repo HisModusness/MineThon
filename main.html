@@ -5,6 +5,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 		<script src="scripts/jquery-1.11.1.min.js"></script>
+		<script src="scripts/jquery.waypoints.min.js"></script>
 		<script src="scripts/smooth-scroll.min.js"></script>
 		<script src="scripts/countdown.min.js"></script>
 		<meta name="viewport" content="width = device-width" />
@@ -20,17 +21,17 @@
 						<a href="https://imraising.tv/u/minethon" target="_blank"><div class="menu-item" id="menu-donate"><p class="centered">Donate</p></div></a>
 					</div>
 
-					<a data-scroll href="#go-volunteers"><div class="right menu-item"><p class="centered">Volunteers</p></div></a>
-					<a data-scroll href="#go-sponsors"><div class="right menu-item"><p class="centered">Sponsors</p></div></a>
-					<a data-scroll href="#go-faq"><div class="right menu-item"><p class="centered">FAQ</p></div></a>
+					<a data-scroll href="#go-volunteers"><div id="nav-volunteers" class="right menu-item"><p class="centered">Volunteers</p></div></a>
+					<a data-scroll href="#go-sponsors"><div id="nav-sponsors" class="right menu-item"><p class="centered">Sponsors</p></div></a>
+					<a data-scroll href="#go-faq"><div id="nav-faq" class="right menu-item"><p class="centered">FAQ</p></div></a>
 					<!-- <a data-scroll href="#go-schedule"><div class="right menu-item"><p class="centered">Schedule</p></div></a> -->
 					<!-- <a data-scroll href="#go-donors"><div class="right menu-item"><p class="centered">Top Donors</p></div></a> -->
-					<a data-scroll href="#go-stream"><div class="right menu-item"><p class="centered">Stream</p></div></a>
+					<a data-scroll href="#go-stream"><div id="nav-stream" class="right menu-item highlight"><p class="centered">Stream</p></div></a>
 					
 				</div>
 			</div>
 			
-			<a id="go-stream"></a>
+			<a id="go-stream" class="waypoint"></a>
 			<div class="header-container outwrap" style="padding-top: 57px">
 				<div class="header double">
 					<h1>PLAY MINECRAFT. SUPPORT ABLEGAMERS.</h1>
@@ -148,7 +149,7 @@
 				</div>
 			</div> -->
 			
-			<a id="go-faq"></a>
+			<a id="go-faq" class="waypoint"></a>
 			<div class="header-container outwrap">
 				<div class="header">
 					<h1>FAQ</h1>
@@ -201,7 +202,7 @@
 				</div>
 			</div>
 			
-			<a id="go-sponsors"></a>
+			<a id="go-sponsors" class="waypoint"></a>
 			<div class="header-container outwrap">
 				<div class="header">
 					<h1>SPONSORS</h1>
@@ -260,7 +261,7 @@
 			</div>
 
 			
-			<a id="go-volunteers"></a>
+			<a id="go-volunteers" class="waypoint"></a>
 			<div class="header-container outwrap">
 				<div class="header">
 					<h1>VOLUNTEERS</h1>
@@ -327,7 +328,6 @@
 				</div>
 			</div>
 		</div>
-		<script src="scripts/topdonors.js"></script>
 		<script>
 		$(document).ready(function() {
 			// Set up collapsing FAQ questions
@@ -394,8 +394,32 @@
 		// Initialize smooth scrolling library
 		smoothScroll.init({easing: 'easeInOutCubic', offset: 57});
 		
-		// Start the top donor cycle
-		//ajaxVersion();
+		// Set up the navigation
+		var waypoints = $('.waypoint').waypoint({
+			handler: function(direction) {
+				$('.menu-item').removeClass('highlight');
+				var item = this.element.id;
+				switch (item) {
+					case "go-stream":
+						if (direction === 'down') $('#nav-stream').addClass('highlight');
+						break;
+						
+					case "go-faq":
+						if (direction === 'down') $('#nav-faq').addClass('highlight');
+						else $('#nav-stream').addClass('highlight');
+						break;
+						
+					case "go-sponsors":
+						if (direction === 'down') $('#nav-sponsors').addClass('highlight');
+						else $('#nav-faq').addClass('highlight');
+						break;
+						
+					case "go-volunteers":
+						if (direction === 'down') $('#nav-volunteers').addClass('highlight');
+						else $('#nav-sponsors').addClass('highlight');
+						break;
+				}
+			}, offset: '58px from top' });
 		
 		// Countdown script
 		function update(countdownSpan, targetDate) {
@@ -440,7 +464,6 @@
 			setInterval(function(){
 				update(countdownSpan, targetDate);
   			}, 1000);
-
 				
 		</script>
 	</body>

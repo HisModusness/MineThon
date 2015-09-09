@@ -77,6 +77,10 @@ ul, li {
 	padding-top: 5px;
 }
 
+.highlight {
+	color: white;
+}
+
 .menu-item:hover {
 	color: white;
 }
