@@ -371,17 +371,36 @@ iframe {
 	background-color: white;
 }
 
-#faq {
-	width: 450px;
-	
+#faqs {
+	max-width: 1024px;
+	padding-bottom: 57px;
 	
 	display: table;
-	margin: 57px auto;
-	margin-top: 28px;
+	margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+	#faq-left {
+		position: relative;
+		float: left;
+		margin-right: 57px;
+		padding-bottom: 0px;
+	}
+	
+	#faq-right {
+		position: relative;
+		float: right;
+	}
+}
+
+.faq {
+	width: 450px;
+	display: table;
+	margin: 28px auto; 
 	text-align: center;
 }
 
-#faq h1 {
+
+.faq h1 {
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
 	font-weight: 300;
@@ -393,7 +412,7 @@ iframe {
 	
 }
 
-#faq p {
+.faq p {
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	font-weight: 300;
@@ -407,11 +426,11 @@ iframe {
 	
 }
 
-#faq a {
+.faq a {
 	color: #2d3339;
 }
 
-#faq p a {
+.faq p a {
 	color: #bfd6f0;
 }
 
