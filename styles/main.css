@@ -232,6 +232,12 @@ ul, li {
 	display: table;
 }
 
+@media screen and (max-width: 1023px) {
+	#stream-chat iframe {
+		width: 620px;
+	}
+}
+
 iframe {
 	margin: 0px;
 	-webkit-backface-visibility: hidden;
