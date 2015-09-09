@@ -349,6 +349,10 @@
 				e.preventDefault();
 				$(this).addClass('highlight');
 			});
+			$('.menu-item').bind('touchend', function(e) {
+				e.preventDefault();
+				$(this).removeClass('highlight');
+			});
 		});
 		
 		// Initialize smooth scrolling library
