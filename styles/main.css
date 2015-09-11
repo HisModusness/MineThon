@@ -611,7 +611,7 @@ iframe {
 	font-weight: 300;
 	background-color: #512da8;
 	border-radius: 5px;
-	border: 1px solid #673ab7;
+	border: 1px solid #212121;
 }
 
 #donate a {
@@ -625,7 +625,7 @@ iframe {
 #donate a:hover {
 	background-color: #d1c4e9;
 	color: #673ab7;
-	border: 1px solid #673ab7;
+	border: 1px solid #212121;
 	border-radius: 5px;
 }
 
