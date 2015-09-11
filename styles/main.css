@@ -140,7 +140,7 @@ ul, li {
 /* HEADER ITEMS */
 .header-container {
 	background-color: #2d71bd;
-	background: url(../images/Lobby.jpg) no-repeat center center; 
+	background: url(../images/dragon.png) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -151,7 +151,7 @@ ul, li {
 	height: 342px;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	color: white;
-	background-color: rgba(19, 11, 34, 0.7);
+	background-color: rgba(21, 12, 50, 0.7);
 }
 
 .header h1 {
@@ -442,7 +442,7 @@ iframe {
 }
 
 .faq p a {
-	color: #bfd6f0;
+	color: #d1c4e9;
 }
 
 /* SPONSOR ITEMS*/
@@ -578,7 +578,7 @@ iframe {
 
 /* DONATE ITEMS */
 #donate-container {
-	background-color: #673ab7;
+	background-color: #212121;
 }
 
 #donate {
