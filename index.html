@@ -1,28 +1,419 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="styles/promo.css" title="Promo" type="text/css" media="screen" charset="utf-8">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
-		<script src="scripts/countdown.min.js"></script>
 		<title>MineThon 5</title>
+		<link rel="stylesheet" href="styles/main.css" title="Main" type="text/css" media="screen" charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+		<script src="scripts/jquery-1.11.1.min.js"></script>
+		<script src="scripts/jquery.waypoints.min.js"></script>
+		<script src="scripts/smooth-scroll.min.js"></script>
+		<script src="scripts/countdown.min.js"></script>
+		<meta name="viewport" content="width = device-width" />
 	</head>
 	<body>
-		<div id="content-wrap">
-			<div id=content>
-				<p class="big-header">PLAY MINECRAFT. SUPPORT ABLEGAMERS.</p>
-				<div class="spacer"></div>
-				<p class="small-header">48-hour Minecraft charity stream, going live in <span id="countdown-span">some days and some hours</span>.</p>
-				<div class="spacer"></div>
-				<a href="https://imraising.tv/u/minethon" target="_blank"><div class="button"><p class="button-text">DONATE</p></div></a>
-				<div class="spacer"></div>
-				<a href="https://www.youtube.com/watch?v=BM8iNa87-Po" target="_blank">
-					<svg id="play-button" viewBox="0 0 24 24">
-						<path fill="#ffffff" d="M10,16.64V7.64L16,12.14M12,2.14A10,10 0 0,0 2,12.14A10,10 0 0,0 12,22.14A10,10 0 0,0 22,12.14C22,6.61 17.5,2.14 12,2.14Z" />
-					</svg>
-                </a>
+		<div class="wrapper">
+			
+			<div id="navbar-container" class="outwrap">
+				<div id="navbar" class="content">
+					<div class="left"><p id="title">Mine<span style="color: #d1c4e9">Thon</span></p></div>
+					
+					<div class="right">
+						<a href="https://imraising.tv/u/minethon" target="_blank"><div class="menu-item" id="menu-donate"><p class="centered">Donate</p></div></a>
+					</div>
+
+					<a data-scroll href="#go-volunteers"><div id="nav-volunteers" class="right menu-item"><p class="centered">Volunteers</p></div></a>
+					<a data-scroll href="#go-sponsors"><div id="nav-sponsors" class="right menu-item"><p class="centered">Sponsors</p></div></a>
+					<a data-scroll href="#go-faq"><div id="nav-faq" class="right menu-item"><p class="centered">FAQ</p></div></a>
+					<!-- <a data-scroll href="#go-schedule"><div class="right menu-item"><p class="centered">Schedule</p></div></a> -->
+					<!-- <a data-scroll href="#go-donors"><div class="right menu-item"><p class="centered">Top Donors</p></div></a> -->
+					<a data-scroll href="#go-stream"><div id="nav-stream" class="right menu-item highlight"><p class="centered">Stream</p></div></a>
+					
+				</div>
+			</div>
+			
+			<a id="go-stream" class="waypoint"></a>
+			<div class="header-container outwrap" style="padding-top: 57px">
+				<div class="header double">
+					<h1>PLAY MINECRAFT. SUPPORT ABLEGAMERS.</h1>
+					<h2>48-hour Minecraft charity stream, going live in <span id="countdown-span">some days and some hours</span>.</h2>
+				</div>
+			</div>
+
+			<div id="stream-container" class="outwrap">
+				<div id="stream">
+					<div id="stream-video">
+						<iframe src="http://www.twitch.tv/ablegamers/embed" frameborder="0" scrolling="no" height="378" width="620"></iframe>
+					</div>					
+					<div id="stream-chat">
+						<iframe frameborder="0" scrolling="no" src="http://www.twitch.tv/ablegamers/chat?popout=" height="378" width="376"></iframe>
+					</div>
+
+				</div>
+			</div>
+			
+			<!-- <a id="go-donors"></a>
+			<div class="header-container outwrap">
+				<div class="header">
+					<h1>TOP DONORS</h1>
+					<h2>Who has donated the most so far?</h2>
+				</div>
+			</div>
+			
+			<div id="donors-container" class="outwrap">
+				<div id="donors">
+					<div id="donors-left">
+						<div class="donor">
+							<h1 id="d1h">Donor 1</h1>
+							<p id="d1p">$10</p>
+						</div>
+						<div class="donor">
+							<h1 id="d2h">Donor 2</h1>
+							<p id="d2p">$9</p>
+						</div>
+						<div class="donor">
+							<h1 id="d3h">Donor 3</h1>
+							<p id="d3p">$8</p>
+						</div>
+					</div>
+					<div id="donors-right">
+						<div class="donor">
+							<h1 id="d4h">Donor 4</h1>
+							<p id="d4p">$7</p>
+						</div>
+						<div class="donor">
+							<h1 id="d5h">Donor 5</h1>
+							<p id="d5p">$6</p>
+						</div>
+						
+						<div class="donor">
+							<h1 id="d6h">Donor 6</h1>
+							<p id="d6p">$5</p>
+						</div>
+					</div>
+
+				</div>
+			</div> -->
+
+			
+			<!-- <a id="go-schedule"></a>
+			<div class="header-container outwrap">
+				<div class="header">
+					<h1>SCHEDULE</h1>
+				</div>
+			</div>
+			
+			<div id="schedule-container" class="outwrap">
+				<div id="schedule">
+					<a href="javascript:void(0)"><h1 id="s1h">July 25</h1></a>
+					<ul id="s1">
+						<li>6 am &mdash; MineThon start, Mega raffle, Razer Chimera raffle</li>
+						<li>10 am &mdash; Creeper Beanie auction</li>
+						<li>12 pm &mdash; MineThon Shirt raffle, AbleGamers & MineThon Shirts auction</li>
+						<li>2 pm &mdash; Evil Controller auction</li>
+						<li>4 pm &mdash; BionikMonkey 24" JeromeASF Doodz auction</li>
+						<li>6 pm &mdash; BionikMonkey 16" Ethan Buddiez raffle, BionikMonkey 24" Custom Doodz auction</li>
+						<li>10 pm &mdash; BionikMonkey 12" Ethan Pillow auction</li>
+					</ul>
+					</p>
+					
+					<a href="javascript:void(0)"><h1 id="s2h">July 26</h1></a>
+					<ul id="s2">
+						<li>12 am &mdash; AbleGamers Shirt raffle</li>
+						<li>6 am &mdash; MineThon Shirt raffle</li>
+						<li>10 am &mdash; BionikMonkey Custom Doodz auction</li>
+						<li>12 pm &mdash; Razer Electra raffle, AbleGamers & MineThon Shirts auction</li>
+						<li>2 pm &mdash; Guude & Coestar Skype, BionikMonkey 16" Guude & Coestar Buddiez auction</li>
+						<li>4 pm &mdash; Evil Controllers auction</li>
+						<li>6 pm &mdash; BionikMonkey 16" NikSapien Buddiez raffle, BionikMonkey 12" Custom Pillow auction</li>
+						<li>10 pm &mdash; Creeper Beanie auction</li>
+					</ul>
+					
+					<a href="javascript:void(0)"><h1 id="s3h">July 27</h1></a>
+					<ul id="s3">
+						<li>12 am &mdash; AbleGamers Shirt raffle</li>
+						<li>6 am &mdash; MineThon Shirt raffle</li>
+						<li>10 am &mdash; MineThon Cooler auction</li>
+						<li>12 pm &mdash; Razer Chimera raffle</li>
+						<li>2 pm &mdash; Creeper Beanie auction</li>
+						<li>4 pm &mdash; BionikMonkey 24" Custom Buddiez auction</li>
+						<li>6 pm &mdash; MineThon Shirt raffle, MineThon 6"x9" Banner auction</li>
+						<li>10 pm &mdash; BionikMonkey 12" Custom Pillow auction</li>
+					</ul>
+					
+					<a href="javascript:void(0)"><h1 id="s4h">July 28</h1></a>
+					<ul id="s4">
+						<li>12 am &mdash; AbleGamers Shirt raffle</li>
+						<li>6 am &mdash; MineThon ends</li>
+					</ul>
+					
+				</div>
+			</div> -->
+			
+			<a id="go-faq" class="waypoint"></a>
+			<div class="header-container outwrap">
+				<div class="header">
+					<h1>FAQ</h1>
+				</div>
+			</div>
+			<div id="faq-container" class="outwrap">
+				<div id="faqs">
+					<div id="faq-left">
+						<div class="faq">
+							<h1>What is MineThon?</h1>
+							<p>MineThon is an annual Minecraft charity stream that raises donations for AbleGamers. The stream was founded by Ethan Smith in 2011. To date, the MineThon volunteers have raised more than $45,000 for the charity.</p>
+						</div>
+						
+						<div class="faq">
+							<h1>How do I play on the MineThon server?</h1>
+							<p>Donate $5, and you'll be white listed on play.minethon.com</p>
+						</div>
+					
+					
+						<div class="faq">
+							<h1>Do you accept cards?</h1>
+							<p>Yes! Donate with your card <a href="http://www.imraising.com/minethon" target="_blank">here.</a></p>
+						</div>
+						
+						<div class="faq">
+							<h1>Is my donation tax deductible?</h1>
+							<p>Yup! The EIN for AbleGamers is 30-0533750.</p>
+						</div>
+						
+						<div class="faq">
+							<h1>What are the teams?</h1>
+							<p>When you donate, you can choose to support Team Pig, Team Ocelot, or Team Sheep. Every donation goes directly to AbleGamers. The teams are just a fun way to encourage friendly competition.</p>
+						</div>
+					</div>
+					
+					<div id="faq-right">
+						<div class="faq">
+							<h1>What is AbleGamers?</h1>
+							<p>AbleGamers is a 501(c)3 non-profit that strives to improve the quality of life for people with disabilities through the power of video games. The charity was founded by Mark Barlet and Stephanie Walker in 2005. Today, AbleGamers grants accessible peripherals to people with disabilities worldwide and works with developers to make video games more accessible.</p>
+						</div>
+						
+						<div class="faq">
+							<h1>Where does my donation go?</h1>
+							<p>Your donation goes directly to AbleGamers.</p>
+						</div>
+						
+						
+						<div class="faq">
+							<h1>Do you accept PayPal?</h1>
+							<p>Yeah! Donate with your PayPal <a href="http://www.imraising.com/minethon" target="_blank">here.</a></p>
+						</div>
+						
+						<div class="faq">
+							<h1>How can I call the MineThon volunteers?</h1>
+							<p>If you live in the United States, you can call (402) 979-6463.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<a id="go-sponsors" class="waypoint"></a>
+			<div class="header-container outwrap">
+				<div class="header">
+					<h1>SPONSORS</h1>
+				</div>
+			</div>
+			
+			<div id="sponsors-container" class="outwrap">
+				<div id="sponsors">
+					<div id="sponsors-left">
+						<div class="sponsor">
+							<a href="http://drinkkickapoo.com" target="_blank"><img src="images/sponsors/kickapoojoyjuice.png" /></a>
+							<h1>Kickapoo Joy Juice</h1>
+						</div>
+						<div class="sponsor">
+							<a href="http://corsair.com/" target="_blank"><img src="images/sponsors/corsair.png" /></a>
+							<h1>Corsair</h1>
+							<!-- <p>Fast, customizable Minecraft servers</p> -->
+						</div>
+						<div class="sponsor">
+							<a href="http://www.fangamer.com" target="_blank"><img src="images/sponsors/fangamer.png" /></a>
+							<h1>Fangamer</h1>
+						</div>
+						<div class="sponsor">
+							<a href="http://www.gamepedia.com" target="_blank"><img src="images/sponsors/gamepedia.png" /></a>
+							<h1>Gamepedia</h1>
+						</div>
+						<div class="sponsor">
+							<a href="http://sanshee.com" target="_blank"><img src="images/sponsors/sanshee.png" /></a>
+							<h1>Sanshee</h1>
+						</div>
+					</div>
+					<div id="sponsors-right">
+						<div class="sponsor">
+							<a href="http://www.creeperhost.net" target="_blank"><img src="images/sponsors/creeperhost.png" /></a>
+							<h1>CreeperHost</h1>
+						</div>
+						<div class="sponsor">
+							<a href="http://www.gunnars.com" target="_blank"><img src="images/sponsors/gunnar.png" /></a>
+							<h1>GUNNAR</h1>
+						</div>
+						<div class="sponsor">
+							<a href="https://www.jinx.com" target="_blank"><img src="images/sponsors/jinx.png" /></a>
+							<h1>J!NX</h1>
+						</div>
+						<div class="sponsor">
+							<a href="https://www.monstercat.com" target="_blank"><img src="images/sponsors/monstercat.png" /></a>
+							<h1>Monstercat</h1>
+						</div>
+						<div class="sponsor">
+							<a href="https://www.thinkgeek.com" target="_blank"><img src="images/sponsors/thinkgeek.png" /></a>
+							<h1>ThinkGeek</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			
+			<a id="go-volunteers" class="waypoint"></a>
+			<div class="header-container outwrap">
+				<div class="header">
+					<h1>VOLUNTEERS</h1>
+				</div>
+			</div>
+			
+			<div id="volunteers-container" class="outwrap">
+				<div id="volunteers">
+					<div id="volunteers-left">
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/caroline.png" />
+							<h1>Caroline <a href="https://twitter.com/JustTheNibb" target=_blank><img class="icon" src="images/twitter.png" /></a></h1>
+						</div>
+						
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/craigums.png" />
+							<h1>Craig <a href="https://twitter.com/craigums" target=_blank><img class="icon" src="images/twitter.png" /></a></h1>
+						</div>
+						
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/ethank.png" />
+							<h1>Ethan K <a href="https://twitter.com/ethan_awesome" target=_blank><img class="icon" src="images/twitter.png" /></a></h1>
+						</div>
+						
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/joey.png" />
+							<h1>Joey <a href="https://twitter.com/Twister915" target=_blank><img class="icon" src="images/twitter.png" /></a></h1>
+						</div>
+						
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/mark.png" />
+							<h1>Mark <a href="https://twitter.com/markbarlet" target=_blank><img class="icon" src="images/twitter.png" /></a></h1>
+						</div>
+						
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/wade.png" />
+							<h1>Wade <a href="https://twitter.com/LordMinion777" target=_blank><img class="icon" src="images/twitter.png" /></a></h1>
+						</div>
+						
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/bob.png" />
+							<h1>Bob <a href="https://twitter.com/muyskerm" target=_blank><img class="icon" src="images/twitter.png" /></a></h1>
+						</div>
+					</div>
+					<div id="volunteers-right">
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/zewlzor.png" />
+							<h1>Tom <a href="https://twitter.com/Zewlzor" target=_blank><img class="icon" src="images/twitter.png" /></a></h1>
+						</div>
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/chad.png" />
+							<h1>Chad</h1>
+						</div>
+						
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/dany.png">
+							<h1>Dany <a href="https://twitter.com/Daneoraptor" target=_blank><img class="icon" src="images/twitter.png" /></a></h1>
+						</div>
+						
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/ethans.png" />
+							<h1>Ethan S <a href="https://twitter.com/WildManEthan" target=_blank><img class="icon" src="images/twitter.png" /></a></h1>
+						</div>
+						
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/liam.png" />
+							<h1>Liam <a href="https://twitter.com/ModusOperandi" target=_blank><img class="icon" src="images/twitter.png" /></a></h1>
+						</div>
+						
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/molly.png" />
+							<h1>Molly <a href="https://twitter.com/foxtrot44" target=_blank><img class="icon" src="images/twitter.png" /></a></h1>
+						</div>
+						
+						<div class="volunteer">
+							<img class="photo" src="images/volunteers/mandy.png" />
+							<h1>Mandy <a href="https://twitter.com/flipperone2012" target=_blank><img class="icon" src="images/twitter.png" /></a></h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="donate-container" class="outwrap">
+				<div id="donate">
+					<h1>So Everyone Can Game</h1>
+					<h2><a href="https://imraising.tv/u/minethon" target="_blank">Donate to AbleGamers</a></h2>
+				</div>
+			</div>
+			<!-- Needed to push the footer to the bottom of the window -->
+			<div class="push"></div>
+		</div>
+		<div id="footer-container" class="outwrap">
+			<div id="footer" class="content">
+				<div class="left">
+					<p>&copy; MineThon 2015</p>
+				</div>
+				<div class="right">
+				</div>
 			</div>
 		</div>
-		<script type="text/javascript">
-			function update(countdownSpan, targetDate) {
+		<script>
+		$(document).ready(function() {
+			$('.menu-item').bind('touchstart', function(e) {
+				//e.preventDefault();
+				$(this).addClass('highlight');
+			});
+			$('.menu-item').bind('touchend', function(e) {
+				//e.preventDefault();
+				$(this).removeClass('highlight');
+			});
+		});
+		
+		// Initialize smooth scrolling library
+		smoothScroll.init({easing: 'easeInOutCubic', offset: 57});
+		
+		// Set up the navigation
+		var waypoints = $('.waypoint').waypoint({
+			handler: function(direction) {
+				$('.menu-item').removeClass('highlight');
+				var item = this.element.id;
+				switch (item) {
+					case "go-stream":
+						$('#nav-stream').addClass('highlight');
+						break;
+						
+					case "go-faq":
+						if (direction === 'down') $('#nav-faq').addClass('highlight');
+						else $('#nav-stream').addClass('highlight');
+						break;
+						
+					case "go-sponsors":
+						if (direction === 'down') $('#nav-sponsors').addClass('highlight');
+						else $('#nav-faq').addClass('highlight');
+						break;
+						
+					case "go-volunteers":
+						if (direction === 'down') $('#nav-volunteers').addClass('highlight');
+						else $('#nav-sponsors').addClass('highlight');
+						break;
+				}
+			}, offset: '58px from top' });
+		
+		// Countdown script
+		function update(countdownSpan, targetDate) {
 				var cd = countdown(null, targetDate, countdown.DAYS | countdown.HOURS);
 				var countdownString = "";
 				if (cd.value > 0) {						// Minethon starts in the future
@@ -64,6 +455,8 @@
 			setInterval(function(){
 				update(countdownSpan, targetDate);
   			}, 1000);
+				
 		</script>
 	</body>
 </html>
+<!-- Macs up, PCs down -->

@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/promo.css" title="Promo" type="text/css" media="screen" charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+		<script src="scripts/countdown.min.js"></script>
+		<title>MineThon 5</title>
+	</head>
+	<body>
+		<div id="content-wrap">
+			<div id=content>
+				<p class="big-header">PLAY MINECRAFT. SUPPORT ABLEGAMERS.</p>
+				<div class="spacer"></div>
+				<p class="small-header">48-hour Minecraft charity stream, going live in <span id="countdown-span">some days and some hours</span>.</p>
+				<div class="spacer"></div>
+				<a href="https://imraising.tv/u/minethon" target="_blank"><div class="button"><p class="button-text">DONATE</p></div></a>
+				<div class="spacer"></div>
+				<a href="https://www.youtube.com/watch?v=BM8iNa87-Po" target="_blank">
+					<svg id="play-button" viewBox="0 0 24 24">
+						<path fill="#ffffff" d="M10,16.64V7.64L16,12.14M12,2.14A10,10 0 0,0 2,12.14A10,10 0 0,0 12,22.14A10,10 0 0,0 22,12.14C22,6.61 17.5,2.14 12,2.14Z" />
+					</svg>
+                </a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function update(countdownSpan, targetDate) {
+				var cd = countdown(null, targetDate, countdown.DAYS | countdown.HOURS);
+				var countdownString = "";
+				if (cd.value > 0) {						// Minethon starts in the future
+					if (cd.days == 1) {
+						countdownString += cd.days.toString() + " day";
+					}
+					else if (cd.days > 1) {
+						countdownString += cd.days.toString() + " days";
+					}
+					
+					if (cd.days > 0 && cd.hours > 0) {
+						countdownString += " and ";
+					}
+					
+					if (cd.hours == 1) {
+						countdownString += cd.hours.toString() + " hour";	
+					}
+					
+					else if (cd.hours > 1) {
+						countdownString += cd.hours.toString() + " hours";
+					}
+					
+					countdownSpan.innerHTML = countdownString;
+				}
+				
+				else if (cd.value > -172800000) {		// Minethon is currently happening
+					countdownText = document.getElementById("countdown").innerHTML = "Minethon is happening now!";
+				}
+				
+				else {									// Minethon is over
+					countdownText = document.getElementById("countdown").innerHTML = "Minethon is over!";
+				}
+				
+			}
+			var countdownSpan = document.getElementById("countdown-span");
+			targetDate = new Date(1442077200000); // September 12, 2015;
+ 
+			update(countdownSpan, targetDate);
+			setInterval(function(){
+				update(countdownSpan, targetDate);
+  			}, 1000);
+		</script>
+	</body>
+</html>
