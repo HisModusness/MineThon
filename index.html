@@ -33,8 +33,8 @@
 			<a id="go-stream" class="waypoint"></a>
 			<div class="header-container outwrap" style="padding-top: 57px">
 				<div class="header double">
-					<h1>PLAY MINECRAFT. SUPPORT ABLEGAMERS.</h1>
-					<h2>48-hour Minecraft charity stream, going live in <span id="countdown-span">some days and some hours</span>.</h2>
+					<h1>PLAY MINECRAFT. HELP CHARITY.</h1>
+					<h2 id="header-subtitle">48-hour Minecraft charity stream, going live in <span id="countdown-span">some days and some hours</span>.</h2>
 				</div>
 			</div>
 
@@ -66,13 +66,18 @@
 						
 						<div class="faq">
 							<h1>How do I play on the MineThon server?</h1>
-							<p>Donate $5, and you'll be white listed on play.minethon.com</p>
+							<p>Donate $5, and you'll be white listed on charity.minethon.com. Donate $10 to fly in the hub.</p>
 						</div>
 					
 					
 						<div class="faq">
 							<h1>Do you accept cards?</h1>
-							<p>Yes! Donate with your card <a href="http://www.imraising.com/minethon" target="_blank">here.</a></p>
+							<p>Yes! Donate with your card <a href="https://imraising.tv/minethon" target="_blank">here.</a></p>
+						</div>
+						
+						<div class="faq">
+							<h1>Do you accept Bitcoin?</h1>
+							<p>We do! Donate with your Bitcoin <a href="https://imraising.tv/minethon" target="_blank">here.</a></p>
 						</div>
 						
 						<div class="faq">
@@ -81,13 +86,8 @@
 						</div>
 						
 						<div class="faq">
-							<h1>What are the teams?</h1>
-							<p>When you donate, you can choose to support Team Pig, Team Ocelot, or Team Sheep. Every donation goes directly to AbleGamers. The teams are just a fun way to encourage friendly competition.</p>
-						</div>
-						
-						<div class="faq">
 							<h1>Who developed your Minecraft mini-games?</h1>
-							<p>Tom and Joey. They're the best. You can reach Tom here and Joey here.</p>
+							<p>Tom and Joey. They're the best. You can reach Tom <a href="https://twitter.com/Zewlzor" target="_blank">here</a> and Joey <a href="https://twitter.com/Twister915" target="_blank">here</a>.</p>
 						</div>
 					</div>
 					
@@ -105,12 +105,17 @@
 						
 						<div class="faq">
 							<h1>Do you accept PayPal?</h1>
-							<p>Yeah! Donate with your PayPal <a href="http://www.imraising.com/minethon" target="_blank">here.</a></p>
+							<p>Yeah! Donate with your PayPal <a href="https://imraising.tv/minethon" target="_blank">here.</a></p>
 						</div>
 						
 						<div class="faq">
 							<h1>How can I call the MineThon volunteers?</h1>
 							<p>If you live in the United States, you can call (402) 979-6463.</p>
+						</div>
+						
+						<div class="faq">
+							<h1>What are the teams?</h1>
+							<p>When you donate, you can choose to support Team Pig, Team Ocelot, or Team Creeper. Every donation goes directly to AbleGamers. The teams are just a fun way to encourage friendly competition.</p>
 						</div>
 						
 						<div class="faq">
@@ -369,11 +374,12 @@
 				}
 				
 				else if (cd.value > -172800000) {		// Minethon is currently happening
-					countdownText = document.getElementById("countdown").innerHTML = "Minethon is happening now!";
+					document.getElementById("header-subtitle").innerHTML = "48-hour Minecraft charity stream to raise donations for AbleGamers.";
+					
 				}
 				
 				else {									// Minethon is over
-					countdownText = document.getElementById("countdown").innerHTML = "Minethon is over!";
+					document.getElementById("header-subtitle").innerHTML = "Thanks for supporting AbleGamers!";
 				}
 				
 			}
